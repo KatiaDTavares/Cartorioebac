@@ -127,11 +127,12 @@ int main()
 	
      	printf("#### Cartório da Katia ####\n\n"); // Inicio do menu
     	printf("Escolha a opção abaixo:\n\n");
-        printf("\t1 - Registrar nomes\n");
-	    printf("\t2 - Consultar nomes\n");
-    	printf("\t3 - Deletar nomes\n\n\n");
+        printf("\t1 - Registrar nomes:\n");
+	    printf("\t2 - Consultar nomes:\n");
+    	printf("\t3 - Deletar nomes:\n\n\n");
+    	printf("\t4 - Sair do Sistema:\n\n");
 	    printf("Qual opção você deseja: "); // Final do menu
-  
+	    	
     
         scanf("%d",&opcao); // Armazendo as informações, a escolha do usuario
     
@@ -142,9 +143,11 @@ int main()
         	case 1:
             registro();
 			break;
+			
 			case 2:	
 			consulta();
 			break;
+			
 			case 3:
 			deletar();
 			break;
@@ -152,6 +155,12 @@ int main()
 			printf("Essa opção nao existe!!\n");
     		system("pause");
 			break;	
+			
+			case 4:
+			printf("Obrigada por ultilizar o sistema!\n");
+			return 0;
+			break;
+			
 		} // fim da seleção
      
     }
